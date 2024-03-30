@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-dark {
+  background: linear-gradient(to right, #00093c,#2d0b00);
+ }
+
+ 
+ .about-text p {
+  color: #2d0b00;
+  font-family: "Gill Sans";
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/*amenities section*/
+
+.containeram {
+  position: relative;
+  display: flex;
+  padding: 80px 40px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.cardam {
+  position: relative;
+  width: 250px;
+  height: 130px;
+  background: #fff;
+  transition: 0.5s;
+  margin-top: 150px;
+}
+
+.cardam:hover {
+  height: 500px;
+}
+
+.cardam .lines {
+  position: absolute;
+  inset: 0;
+  background: #000;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.cardam .lines::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 120px;
+  background: linear-gradient(
+    transparent,
+    #45f3ff,
+    #45f3ff,
+    #45f3ff,
+    transparent
+  );
+  animation: animate 4s linear infinite;
+  animation-play-state: paused;
+}
+
+.cardam:hover .lines::before {
+  animation-play-state: running;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.cardam .lines::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #fff;
+}
+
+.cardam .imgbxam {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  transform: translateX(-50%);
+  background: #000;
+  transition: 0.5s;
+  z-index: 10;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.cardam:hover .imgbxam {
+  top: 25px;
+  width: 150px;
+  height: 150px;
+}
+
+.cardam .imgbxam::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    transparent,
+    #ff3c7b,
+    #ff3c7b,
+    #ff3c7b,
+    transparent
+  );
+  animation: animate2 6s linear infinite;
+  animation-play-state: paused;
+}
+
+.cardam:hover .imgbxam::before {
+  animation-play-state: running;
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+.cardam .imgbxam::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #fff;
+}
+
+.cardam .imgbxam img {
+  position: absolute;
+  z-index: 1;
+  opacity: 2.5;
+  transition: 0.5s;
+  filter: invert(2), brightness(1);
+  width: 60px;
+  height: 60px;
+}
+
+.cardam:hover .imgbxam img {
+  opacity: 1;
+}
+
+.cardam .contentbxam {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  padding-bottom: 70px;
+}
+
+.cardam .contentbxam .detaisam {
+  padding: 30px 20px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(320px);
+}
+
+.cardam:hover .contentbxam .detaisam {
+  transform: translateY(70px);
+}
+
+.cardam .contentbxam .detaisam h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  background: linear-gradient(90deg,#000,#ff3c7b,#45f3ff);
+  color: #000;
+  line-height: 1.2em;
+  opacity: 1;
+}
+
+.cardam:hover .contentbxam .detaisam h2 {
+  background: none;
+  color: aqua;
+}
+
+
+.cardam .contentbxam .detaisam p {
+  color: #000;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.cardam:hover .contentbxam .detaisam p {
+  opacity: 1;
+}
+
+.cardam .contentbxam .detaisam a {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #45f3ff;
+  color: #292929;
+  margin-top: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.cardam:hover .contentbxam .detaisam p,
+.cardam:hover .contentbxam .detaisam a {
+  opacity: 1;
+}
+
+/*our services*/
+
+
+.containerser
+{
+  position: relative;
+  width: 1340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 20px 20px 20px;
+  margin-top: 50px;
+}
+
+.containerser .card
+{
+  position: relative;
+  max-width: 400px;
+  height: 215px;
+  background: #fff;
+  margin: 30px 0px 60px 0px;
+  padding: 20px 15px ;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0,0,0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.containerser .card:hover
+{
+  height: 520px;
+}
+
+.containerser .card .imgbox
+{
+  position: relative;
+  width: 360px;
+  height: 360px;  
+  top: -60px;
+  left: 10px;
+  z-index: 1;
+  box-shadow:  0 5px 20px rgba(0,0,0, 0.2);;
+}
+
+.containerser .card .imgbox img
+{
+  width: 100%;
+  height: 100%;
+ border-radius: 4px;
+}
+
+.containerser .card .content
+{
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.containerser .card:hover .content
+{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+@media (max-width:440px)
+{
+
+  
+.containerser
+{
+  position: relative;
+  width: 940px;
+  display: flex;
+
+}
+   
+.containerser .card
+{
+  position: relative;
+  max-width: 300px;
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.containerser .card .imgbox
+{
+  position: relative;
+  width: 200px;
+  height: 200px;  
+ 
+}
+}
+

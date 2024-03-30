@@ -1,0 +1,483 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/*footer section*/
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .rowfoot {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .colfoot {
+    flex-basis: 25%;
+    padding: 10px;
+  }
+  
+  .colfoot:nth-child(2),
+  .colfoot:nth-child(3) {
+    flex-basis: 20%;
+  }
+  
+  .logo {
+    width: 100px;
+    margin-bottom: 30px;
+  }
+  
+  .colfoot h5 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .email-id 
+  {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  ul li {
+    list-style: none;
+    margin-bottom: 4px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+   form1{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:1px solid #ccc ;
+    margin-bottom: 50px;
+  } 
+  
+  form1 .fa {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  form1 input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+  }
+  
+  form1 button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  form1 button .arrow-icon2 {
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  .social-icons .fa-brands {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 0px;
+    cursor: pointer;
+  }
+  
+  hr {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    margin: 20px auto;
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+  
+  .underline {
+    width: 100%;
+    overflow: hidden;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+  }
+  
+  .underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+  }
+  
+  @keyframes moving {
+    0% {
+      left: -20px;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    footer {
+      bottom: unset;
+    }
+  
+    .colfoot {
+      flex-basis: 100%;
+    }
+  
+    .colfoot:nth-child(2),
+    .colfoot:nth-child(3) {
+      flex-basis: 100%;
+    }
+  }
+     
+   @media(max-width:1110px)
+   {
+        
+   footer {
+  bottom: unset;
+       }
+       
+  .colfoot{
+    flex-basis: 50%;
+  }
+
+  .colfoot:nth-child(2),.colfoot:nth-child(3) {
+    flex-basis: 50%;
+  }
+    
+  .logo {
+    width: 90px;
+    margin-bottom: 30px;
+  }
+     }
+   
+     
+   @media(max-width:574px)
+   {
+        
+   footer {
+  bottom: unset;
+       }
+       
+  .colfoot{
+    flex-basis: 100%;
+  }
+  
+  .colfoot:nth-child(2),
+  .colfoot:nth-child(3) {
+    flex-basis: 100%;
+  }
+   
+     }
+   
+
+  
+  /*popular section
+  
+  .bg-dark {
+    background: linear-gradient(to right, #00093c, #2d0b00);
+  }
+  
+  .about-text p {
+    color: #2d0b00;
+    font-family: "Gill Sans";
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  @property --a {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+  }
+  
+  /*signin section*
+  
+  .box {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background: repeating-conic-gradient(
+      from var(--a),
+      #ff246d 0%,
+      #fc3e7e 5%,
+      transparent 5%,
+      transparent 40%,
+      #f8578d 50%
+    );
+    filter: drop-shadow(0 15px 50px #000);
+    border-radius: 20px;
+    animation: rotating 4s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  
+  .box:hover {
+    width: 450px;
+    height: 500px;
+  }
+  
+  @keyframes rotating {
+    0% {
+      --a: 0deg;
+    }
+  
+    100% {
+      --a: 360deg;
+    }
+  }
+  
+  .box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-conic-gradient(
+      from var(--a),
+      #45f3ff 0%,
+      #6af0fa 5%,
+      transparent 5%,
+      transparent 40%,
+      #9bf2f9 50%
+    );
+    filter: drop-shadow(0 15px 50px #000);
+    border-radius: 20px;
+    animation: rotating 4s linear infinite;
+    animation-delay: -1s;
+  }
+  
+  .box::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border-radius: 15px;
+    border: 8px solid #252525;
+    background: #2d2d39;
+  }
+  
+  
+  
+  .login {
+    position: absolute;
+    inset: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    box-shadow: inset 10px 20px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  .box:hover .login {
+    inset: 40px;
+  }
+  
+  .loginbx {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    transform: translateY(134px);
+    transition: 0.5s;
+  }
+  
+  .box:hover .loginbx {
+    transform: translateY(0px);
+  }
+  
+  .loginbx h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+  }
+  
+  .loginbx h3 i {
+    color: #ff2770;
+    text-shadow: 0 0 5px #ff2770, 0 0 25px #ff2770;
+  }
+  
+  .loginbx input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.1);
+    border: 2px solid #fff;
+    border-radius: 30px;
+  }
+  
+  .loginbx input::placeholder {
+    color: #999;
+  }
+  
+  .loginbx input[type="submit"] {
+    background: #45f3ff;
+    border: none;
+    font-weight: 500;
+    color: #111;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .loginbx input[type="submit"]:hover {
+    box-shadow: 0 0 10px #45f3ff, 0 0 60px #45f3ff;
+  }
+  
+  .group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .group a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .group a:nth-child(2) {
+    color: #ff2770;
+    font-weight: 600;
+  }
+  
+  review section
+  
+  .containerdev {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+  }
+  
+  .containerdev .cardrev {
+    position: relative;
+    max-width: 300px;
+    height: 420px;
+    background: floralwhite;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .containerdev .cardrev :hover {
+    height: 420px;
+  }
+  
+  .containerdev .cardrev .imgbox {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60;
+    left: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .containerdev .cardrev .imgbox img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  
+  .containerdev .cardrev .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
